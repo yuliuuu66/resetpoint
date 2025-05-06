@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Splash&display=swap');
+
+/*色票變數*/
+:root {
+    --Primary-Color: #C7D1CF;
+    --Secondary-Color: #917B8E;
+    --Text-Color: #3F4144;
+    --Link-Color: #926193;
+}
+
+/*使用標籤*/
+/*清除基本樣式*/
+a {
+    text-align: center;
+    text-decoration: none;
+}
+
+html {
+    /*禁止圈選*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /*清除間隔*/
+    margin: 0;
+    padding: 0;
+}
+
+/*全頁樣式*/
+body {
+    /*flex排版*/
+    display: flex;
+    /*左右置左*/
+    justify-content: left;
+    /*背景色票*/
+    background: var(--Primary-Color);
+    /*字型設定*/
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+/*使用識別碼*/
+/*左側欄*/
+#tabContainer {
+    /*長寬設定*/
+    height: 80vh;
+    width: 15rem;
+    min-width: 15rem;
+    /*背景色票*/
+    background: var(--Secondary-Color);
+    /*綁定位置避免滾動*/
+    top: 10vh;
+    z-index: 999;
+    position: sticky;
+}
+
+/*使用程式化css宣告*/
+/*左側欄標題*/
+#logo {
+    /*寬度設定*/
+    width: 15rem;
+    /*間距設定*/
+    margin-block: 1rem;
+}
+
+/*左側欄按鈕*/
+a.tabA {
+    /*長寬設定*/
+    width: 100%;
+    height: 3.2rem;
+    /*換行輸出*/
+    display: block;
+    /*文字大小、行高、顏色*/
+    font-size: 1.2rem;
+    line-height: 3.2rem;
+    color: var(--Primary-Color);
+    /*背景色票*/
+    background: var(--Secondary-Color);
+}
+
+/*右側內容區塊*/
+#content {
+    min-height: 80vh;
+    margin-inline: 3rem;
+    /*文字顏色*/
+    color: var(--Text-Color);
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+/*內容標題粗體*/
+p.title {
+    font-weight: bolder;
+}
+
+/*標題字體*/
+#name {
+    font-family: "Splash", cursive;
+    font-size: 1.5rem;
+}
+
+/*右側網頁連結*/
+#content a {
+    margin: 0;
+    color: var(--Text-Color);
+}
+
+/*連結拜訪後顏色*/
+#content a:visited {
+    color: var(--Text-Color);
+}
+
+/*連結滑過時顏色*/
+#content a:hover {
+    color: var(--Link-Color);
+}
+
+/*內容圖片寬度*/
+#content img {
+    width: 80%;
+}
